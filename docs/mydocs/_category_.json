@@ -1,0 +1,10 @@
+{
+  "position": 2,
+  "label": "学习文档",
+  "className": "mydocs",
+  "link": {
+    "type": "generated-index",
+    "title": "学习文档",
+    "slug": "mydocs"
+  }
+}
