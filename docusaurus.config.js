@@ -7,13 +7,13 @@ const presets = require('./configs/presets')
 module.exports = {
   title: '测试博客',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://Nevermorexu.github.io',
+  baseUrl: '/docusaurus-test/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'docusaurus-blog',
-  organizationName: 'sunsboyxu',
+  projectName: 'docusaurus-test',
+  organizationName: 'Nevermorexue',
   i18n: {
     defaultLocale: 'zh-Hans', // en | zh-Hans
     locales: ['zh-Hans'],
