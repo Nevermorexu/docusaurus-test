@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 18
+  - 16
 branches:
   only:
     - main
@@ -9,6 +9,6 @@ cache:
 script:
   - git config --global user.name "Nevermorexu"
   - git config --global user.email "sunsboyxu@sina.com"
-  - echo "machine github.com login Nevermorexu password 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" > ~/.netrc
+  - echo "machine github.com login Nevermorexu password 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" > ~/.netrc
   - yarn install
   - GIT_USER="Nevermorexu" yarn deploy
