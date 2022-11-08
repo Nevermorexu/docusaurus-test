@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_test=self.webpackChunkdocusaurus_test||[]).push([[6768],{2671:s=>{s.exports=JSON.parse('{"title":"\u4ea7\u54c1\u6587\u6863","slug":"/product","permalink":"/docusaurus-test/product","navigation":{"next":{"title":"\u4ea7\u54c11","permalink":"/docusaurus-test/product/page1"}}}')}}]);
