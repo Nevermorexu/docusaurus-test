@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout2@v2
       - uses: actions/step-node@v3
         with:
-          node-version: 18
+          node-version: 16
           cache: yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -24,7 +24,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACTIONS_TOKEN }}
           # 要发布到 `gh-pages` 分支的构建输出：
           publish_dir: ./build
           # 下面两行会将此次部署 commit 的作者设置为官方的
