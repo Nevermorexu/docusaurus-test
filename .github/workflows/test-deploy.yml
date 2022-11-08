@@ -1,24 +1,26 @@
 name: Test deployment
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    # 如果你想要进一步定义触发条件、路径等，可以查看文档
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+  pull_request:
+
+# 如果你想要进一步定义触发条件、路径等，可以查看文档
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+
+      - name: Setup node
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: "16"
           cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Test build website
-        run: yarn build
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
